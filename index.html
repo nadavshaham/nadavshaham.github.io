@@ -26,17 +26,24 @@
                  
             }
             #tab{padding-left:5em}
+            #html_list li {
+            border-bottom:3px solid rgb(86, 86, 92);
+            line-height:40px;}
+            
             #hotwords{
                
-                border: 2px solid rgb(145, 0,0);
-                 width:px;
-                 height:70px;
-                 line-height:20px;
-                 
-                 overflow:auto;
+                border: 10px double rgb(66, 63, 79);
+                width:px;
+                height:70px;
+                line-height:20px;
+                overflow:auto;
                 margin:1px;
                 background:rgb(179, 179, 179);
+                padding:5px;
                 
+            }
+            p#hotwords a{font-size:20px;
+                font-family: cursive;
             }
             #hotword_link{
                 position:fixed;
@@ -48,9 +55,6 @@
             .html_info{
                 
             }
-            #html_list li {
-            border-bottom:2px solid rgb(122, 122, 122);
-            line-height:40px;}
             #html_table{
                
                 
@@ -98,13 +102,13 @@ Then there’s a html tag, and at the end of the code there will be a close tag 
     <li><span class = "html_info" id="html_<strong>">&lt;strong> make the text bold.(need closing tag) 
 </span></li>
 
-    <li><span class = "html_info" id="html_<ul>">&lt;ul> Unorderd List, used to declare a list of items.(need closing tag)</span></li>
+        <li><span class = "html_info" id="html_<ul>">&lt;ul> Unorderd List, used to declare a list of items.(need closing tag)</span></li>
     <li><span class = "html_info" id="html_<li>">&lt;li> list item- to add an item to the list (need closing tag)</span></li>
     <li><span class = "html_info" id="html_<ol>">&lt;ol> ordered list- still uses &lt;li> but the program numbers the list for you</span></li>
     <li><span class = "html_info" id="html_<img>">&lt;img>  image- to present an image on our page, but we need to write the source of the page from an other url on the web(the picture is forced to have a url) and for that we add an attribute called source. </span></li>
 <li><span class = "html_info" id="html_<a>">&lt;a> means anchor. Put between tags the text/and or picture u want to show on the page(not the actual url, just the text or picture or both u want to be shown and by clicking it u will be redirected (need closing tag){optional attributes: <a></a>} </span></li>
-    <li><span class = "html_info" id="html_attributes">HTML attributes are a modifier of an HTML element type. An attribute either modifies the default functionality of an element type or provides functionality to certain element types unable to function correctly without them. In HTML syntax, an attribute is added to an HTML start tag. </span></li>
-    <li><span class = "html_info" id="html_attribute_src">attribute: src(source)- in order to present an image u have to tell the program from where to take the picture, thus you use src to tell the program from where u want to take the picture.(i.e &lt;img src = “someurl”>)</span></li>
+        <li><span class = "html_info" id="html_attributes">HTML attributes are a modifier of an HTML element type. An attribute either modifies the default functionality of an element type or provides functionality to certain element types unable to function correctly without them. In HTML syntax, an attribute is added to an HTML start tag. </span></li>
+        <li><span class = "html_info" id="html_attribute_src">attribute: src(source)- in order to present an image u have to tell the program from where to take the picture, thus you use src to tell the program from where u want to take the picture.(i.e &lt;img src = “someurl”>)</span></li>
     <li><span class = "html_info" id="html_attribute_alt">attribute: alt- after src u can write alt to describe the picture(i.e &lt;img src = “someurl” alt= “something”>) </span></li>
 <li><span class = "html_info" id="html_attribute_width/height">attribute: width/height- include them in your image to specify size(recommended:use only one of them)(syntax same as src and alt i.e &lt;img src = “someurl” alt= “something” width = “12”) </span></li>
 <li><span class = "html_info" id="html_attribute_id">attribute: id – add inside the tag to give an elemnt a specific identety. (id must be unike) with that id u can choose a specific elements by stating the id, can be accessed thru css via #some_id{}(valid to most elements) (examples: 
@@ -131,7 +135,7 @@ Then there’s a html tag, and at the end of the code there will be a close tag 
 
 <li><span class = "html_info" id="html_comment">comment - &lt;—some commenting --></span></li>
 <li><span class = "html_info" id="html_<span>">&lt;span> - only useful when combined with css, has no actual symentic to the html language. with span you can choose a part of code and manipulate it with css afterwards(need closing tag)</span></li>
-<li><span class = "html_info" id="html_attribute_<div>">&lt;div>  - if we want to select a group of elements than we just put them between <br>give it an id attribute to choose the specific &lt;div>
+<li><span class = "html_info" id="html_<div>">&lt;div>  - if we want to select a group of elements than we just put them between <br>give it an id attribute to choose the specific &lt;div>
 And like that we can modify the whole group how we want. </span></li>
 <li><span class = "html_info" id="html_<div>vs<span>">when u put things inside &lt;div> it will make them a block, when u pat element inside &lt;span> it will make it inline that means that if u have text which is inline and u put part of it between &lt;div>  it will have new line before and after it. &lt;div> make the element inside it a block. 
 
@@ -147,10 +151,37 @@ And like that we can modify the whole group how we want. </span></li>
 style- when the program sees this tag it nows that this in css and not html thus it switch to a css parser that know how to interpret this language.(need closing tag)
 .</p>
 
-<p id = "hotwords"> html:</p>
-
-    <a href = "#html_!DOCTYPE">!DOCTYPE</a>
-,<a href = "#html_<html>">  &lthtml></a>,
-            
+<p id = "hotwords"><strong style ="font-size:25px;color:rgb(255, 55, 20);"> html:</strong> <a href = "#html_!DOCTYPE">!DOCTYPE</a>
+,<a href = "#html_<html>">  &lt;html></a>,
+,<a href = "#html_<head>"> &lt;head></a>
+,<a href = "#html_<title>"> &lt;title></a>
+,<a href = "#html_<meta>"> &lt;meta></a>
+,<a href = "#html_<h>"> &lt;h></a>
+,<a href = "#html_<p>"> &lt;p></a>
+,<a href = "#html_<br>"> &lt;br></a>
+,<a href = "#html_<em>">&lt;em> </a>
+,<a href = "#html_<strong>">&lt;strong> </a>
+,<a href = "#html_<ul>">&lt;ul> </a>
+,<a href = "#html_<li>">&lt;li></a>
+,<a href = "#html_<ol>">&lt;ol></a>
+,<a href = "#html_<img>">&lt;img></a>
+,<a href = "#html_<a>">&lt;a></a>
+,<a href = "#html_attributes">attributes-general</a>
+,<a href = "#html_attribute_src">attribute-src</a>
+,<a href = "#html_attribute_alt">attribute-alt</a>
+,<a href="#html_attribute_width/height">attributes-width/height</a>
+,<a href = "#html_attribute_id">attribute-id</a>
+,<a href = "#html_attribute_href">attribute-href</a>
+,<a href = "#html_relative_url">relative url</a>
+,<a href = "#html_class">class</a>
+,<a href = "#html_attribute__blank">attribute-_blank</a>
+,<a href = "#html_<table>">&lt;table></a>
+,<a href = "#html_<tbody>">&lt;tbody></a>
+,<a href = "#html_<tbody>_<tr>">&lt;tbody>-&lt;tr></a>
+,<a href = "#html_comment">comments</a>
+,<a href = "#html_<span>">&lt;span></a>
+,<a href = "#html_<div>">&lt;div></a>
+,<a href = "#html_<div>vs<span>">div vs span</a>
+</p>
     </body>
 </html>
