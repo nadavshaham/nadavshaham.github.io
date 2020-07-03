@@ -4,47 +4,153 @@
         <meta charset="utf-8">
         <title>Project: Blog</title>
         <style>
+        #both{clear:both;}
             h1{
+                
                 font-family: cursive;
                 text-align: center;
                 background-color:rgb(35, 123, 217);
+                
               }
             p{
                 font-family:serif,”ariel;
                 line-height: 2em;
                 
             }
-            
-            ul{font-weight:bold;}}
+           h3 li{margin-bottom:20px;
+            }
+            h4{
+                 border: 2px solid rgb(145, 0,0);
+                 width:300px;
+                 
+                 
+            }
+            #tab{padding-left:5em}
+            #hotwords{
+               
+                border: 2px solid rgb(145, 0,0);
+                 width:px;
+                 height:70px;
+                 line-height:20px;
+                 
+                 overflow:auto;
+                margin:1px;
+                background:rgb(179, 179, 179);
+                
+            }
+            #hotword_link{
+                position:fixed;
+                right:1%;
+                top:1px;
+                font-weight:bold;
+                
+            }     
+            .html_info{
+                
+            }
+            #html_list li {
+            border-bottom:2px solid rgb(122, 122, 122);
+            line-height:40px;}
+            #html_table{
+               
+                
+            }
         </style>
     </head>
     <body>
-        
+    <p id = "hotword_link"><a href = "#hotwords1">list of words</a></p>
+       
         <h1>nadav's blog</h1>
 
-        <h3>Contents</h3>
+        <h2>Contents</h2>
         <ul>
             <li><a href = "#id_1">First post - html</a> </li>
             <li><a href = "#id_2">second post - css</a></li>
         </ul>
+        <p> <strong>note:</strong>this page is not a professional page thus i cant guarantee that all the information here is 100% true, on the upper right side of the screen there is a link to a table containing keywords if needed to quicksearch.
+        also, the design of the page right now is bad and thats becouse i have a lot of other courses to do so i hope that in the future i will upgrade the total appearance</p>
         
         <h2 id = "id_1">html</h2>
-        <h6>Posted on 29/6/2020</h6>
+       
         
         <p>
            <strong> Html- HyperText Markup Language </strong><br>
-*Every page starts with !DOCTYPE html<br>
-*Then there’s a html tag, and at the end of the code there will be a close tag /html> all our code will be written inside those 2 tags.
+General info:<br></p>
+<ul id = "html_list">
+    <li><span class = "html_info" id = "html_!DOCTYPE">every page starts with !DOCTYPE html
+        
+    </span></li>
+    
+    <li><span class = "html_info" id= "html_<html>">
+Then there’s a html tag, and at the end of the code there will be a close tag &lt;html> all our code will be written inside those 2 tags.</span>
+</li>
 
-        </p>
+    <li ><span class = "html_info" id="html_<head>">in the &lt;head> tag there is information that helps the browser render the page but doesn’t contain any information the user see’s.</span></li>
+    <li><span class = "html_info" id="html_<title>">&lt;title>  tag is just the big title of the page.</span></li>
+    
+    <li><span class = "html_info" id="html_<meta>"> The &lt;meta> tag defines metadata about an HTML document. Metadata is data (information) about data. &lt;meta> tags always go inside the &lt;head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.(doesn’t have a close tag) </span></li>
+    
+    <li><span class = "html_info" id="html_<h>">
+    &lt;h1>&lt;h2>&lt;h3>...&lt;6> just headers sorted by size(need closing tag). </span></li>
+    <li><span class = "html_info" id="html_<p>">&lt;p> for peregraph, used to add text (need closing tag). </span></li>
+    <li><span class = "html_info" id="html_<br>">&lt;br> tag stands for break, use it if u want the text to go down a line.(no end tag) </span></li>
+    <li><span class = "html_info" id="html_<em>">&lt;em> to mark words( need closing tag ,stands for emphasis)</span></li>
+    <li><span class = "html_info" id="html_<strong>">&lt;strong> make the text bold.(need closing tag) 
+</span></li>
+
+    <li><span class = "html_info" id="html_<ul>">&lt;ul> Unorderd List, used to declare a list of items.(need closing tag)</span></li>
+    <li><span class = "html_info" id="html_<li>">&lt;li> list item- to add an item to the list (need closing tag)</span></li>
+    <li><span class = "html_info" id="html_<ol>">&lt;ol> ordered list- still uses &lt;li> but the program numbers the list for you</span></li>
+    <li><span class = "html_info" id="html_<img>">&lt;img>  image- to present an image on our page, but we need to write the source of the page from an other url on the web(the picture is forced to have a url) and for that we add an attribute called source. </span></li>
+<li><span class = "html_info" id="html_<a>">&lt;a> means anchor. Put between tags the text/and or picture u want to show on the page(not the actual url, just the text or picture or both u want to be shown and by clicking it u will be redirected (need closing tag){optional attributes: <a></a>} </span></li>
+    <li><span class = "html_info" id="html_attributes">HTML attributes are a modifier of an HTML element type. An attribute either modifies the default functionality of an element type or provides functionality to certain element types unable to function correctly without them. In HTML syntax, an attribute is added to an HTML start tag. </span></li>
+    <li><span class = "html_info" id="html_attribute_src">attribute: src(source)- in order to present an image u have to tell the program from where to take the picture, thus you use src to tell the program from where u want to take the picture.(i.e &lt;img src = “someurl”>)</span></li>
+    <li><span class = "html_info" id="html_attribute_alt">attribute: alt- after src u can write alt to describe the picture(i.e &lt;img src = “someurl” alt= “something”>) </span></li>
+<li><span class = "html_info" id="html_attribute_width/height">attribute: width/height- include them in your image to specify size(recommended:use only one of them)(syntax same as src and alt i.e &lt;img src = “someurl” alt= “something” width = “12”) </span></li>
+<li><span class = "html_info" id="html_attribute_id">attribute: id – add inside the tag to give an elemnt a specific identety. (id must be unike) with that id u can choose a specific elements by stating the id, can be accessed thru css via #some_id{}(valid to most elements) (examples: 
+&lt;p id = “some_id”>, &lt;ol id=”some_other_id” >ect…) </span></li>
+<li><span class = "html_info" id="html_attribute_href">attribute: href(hyper reference) - write inside an &lt;a> tag to specifay the url u want to link to (&lt;a href = “http://someurl")  or if u want to jump to a specific part of the page u can just write inside the href #some_id inside "" and  it will go to that id (if you are inside a page that consist of that id)(&lt;a href = “#some_id”>).</span></li>
+<li><span class = "html_info" id="html_relative_url">relative url – write in the &lt;href = “/category/basketball/nba” when you are already in the domain so u don’t need to specifay it or the http, just like in the file explorer. </span></li>
+<li><span class = "html_info" id="html_class">class – adds an element to a certain group, just add after the element inside the starting tag (example &lt;p class=”some_peregraph_class”)(no whitespace allowed!)accessed to css with .some_peregraph_class{} </span></li>
+
+<li><span class = "html_info" id="html_attribute__blank">attribute  -  _blank goes inside &lt;a>  specify if u want the link to open in a new window.</span></li> 
+
+<li><span class = "html_info" id="html_<table>">&lt;table>  to start a table of data ( need closing tag)</span></li>
+
+<span id = "tab"> <ul><li>&lt;thead> stands for table head, inside &lt;table>here u will write the head of the table (need closing tag)</li>
+
+<li>&lt;tr> - inside &lt;thead>, represent a row, each &lt;tr> adds a row(table row)(need closing tag).</li>
+<li>&lt;th>, each time u add this tag u will get another row head(&lt;h>gender&lt;/th> &lt;th> age &lt;/th> etc…)(need closing tag)</li>
+</ul>
+</span>
+<li><span class = "html_info" id="html_<tbody>">&lt;tbody> inside &lt;table>, the body of the table lay here(need closing tab). </span></li>
+<span class  = "html_info" id = "tab html_<tbody>_<tr>"> <ul><li>&lt;tr> inside &lt;tbody>, represent a row of information in the table(not cell,just row)(need closing tag)each &lt;tr> add a row. </li>
+
+<li>&lt;td> represent a cell in the specific row(need to be inside a &lt;tr>(need closing tag) </li>
+</ul></span>
+
+<li><span class = "html_info" id="html_comment">comment - &lt;—some commenting --></span></li>
+<li><span class = "html_info" id="html_<span>">&lt;span> - only useful when combined with css, has no actual symentic to the html language. with span you can choose a part of code and manipulate it with css afterwards(need closing tag)</span></li>
+<li><span class = "html_info" id="html_attribute_<div>">&lt;div>  - if we want to select a group of elements than we just put them between <br>give it an id attribute to choose the specific &lt;div>
+And like that we can modify the whole group how we want. </span></li>
+<li><span class = "html_info" id="html_<div>vs<span>">when u put things inside &lt;div> it will make them a block, when u pat element inside &lt;span> it will make it inline that means that if u have text which is inline and u put part of it between &lt;div>  it will have new line before and after it. &lt;div> make the element inside it a block. 
+
+ </span></li>
+</ul>
+
+        
         
         <h2 id = "id_2">css</h2>
-        <h6>Posted on 29/6/2020</h6>
+        <h4>Posted on 29/6/2020</h4>
         
-        <p><Strong>Css - Cascading Style Sheets</strong> <br>
+        <p id = "both"><Strong>Css - Cascading Style Sheets</strong> <br>
 style- when the program sees this tag it nows that this in css and not html thus it switch to a css parser that know how to interpret this language.(need closing tag)
 .</p>
-        
-        
+
+<p id = "hotwords1"> html:</p>
+<p>
+    <a href = "#html_!DOCTYPE">!DOCTYPE</a>
+,<a href = "#html_<html>">  &lthtml></a>,
+            </p>
     </body>
 </html>
