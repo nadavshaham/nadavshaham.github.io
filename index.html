@@ -4,12 +4,25 @@
         <meta charset="utf-8">
         <title>Project: Blog</title>
         <style>
+         body{background-color:rgb(241, 255, 196);
+        
+            border: 6px dashed rgb(255, 219, 255);
+            padding:14px;
+        }
+        
         #both{clear:both;}
+        
             h1{
                 
                 font-family: cursive;
-                text-align: center;
-                background-color:rgb(35, 123, 217);
+                 text-align: center;
+                
+                background-color:rgb(191, 180, 191);
+                border: 3px dashed  rgb(255, 255, 255);
+                width:347px;
+                padding:3px;
+                color:rgb(120, 60, 60);
+                font-size:27px;
                 
               }
             p{
@@ -17,18 +30,17 @@
                 line-height: 2em;
                 
             }
-           h3 li{margin-bottom:20px;
-            }
-            h4{
-                 border: 2px solid rgb(145, 0,0);
-                 width:300px;
-                 
-                 
-            }
+            
+            #bold{font-weight:bold;}
             #tab{padding-left:5em}
-            #html_list li {
-            border-bottom:3px solid rgb(86, 86, 92);
-            line-height:40px;}
+            #half_tab{padding-left:2em}
+            #html_list li,#css_list li {
+                
+            border-bottom:4px solid rgb(208, 236, 245);
+            
+            line-height:30px;
+                
+            }
             
             #hotwords{
                
@@ -36,7 +48,8 @@
                 width:px;
                 height:70px;
                 line-height:20px;
-                overflow:auto;
+                
+                overflow-y:auto;
                 margin:1px;
                 background:rgb(179, 179, 179);
                 padding:5px;
@@ -44,27 +57,33 @@
             }
             p#hotwords a{font-size:20px;
                 font-family: cursive;
+                
             }
             #hotword_link{
+                font-family: Monospace;
                 position:fixed;
-                right:1%;
+                right:3%;
                 top:1px;
-                font-weight:bold;
+                font-size:16px;
+                font-weight:bolder;
+                border: 5px double rgb(196, 154, 154);
+                height:31px;
+                width:115px;
+                padding-left:9px;
+                padding-right:9px;
+                background:rgb(255, 255, 247);
+                text-align: center;
                 
             }     
-            .html_info{
-                
-            }
-            #html_table{
-               
-                
-            }
+            
+            
         </style>
     </head>
     <body>
     <p id = "hotword_link"><a href = "#hotwords">list of words</a></p>
+    
        
-        <h1>nadav's blog</h1>
+        <h1>html and css tips  & tricks</h1>
 
         <h2>Contents</h2>
         <ul>
@@ -72,72 +91,70 @@
             <li><a href = "#id_2">second post - css</a></li>
         </ul>
         <p> <strong>note:</strong>this page is not a professional page thus i cant guarantee that all the information here is 100% true, on the upper right side of the screen there is a link to a table containing keywords if needed to quicksearch.
-        also, the design of the page right now is bad and thats becouse i have a lot of other courses to do so i hope that in the future i will upgrade the total appearance</p>
+        also, the design of the page right now is bad and thats becouse i have a lot of other courses to do so i hope that in the future i will upgrade the total appearance, also i would recommend to view this page with computer because the font looks better</p>
         
         <h2 id = "id_1">html</h2>
        
         
         <p>
            <strong> Html- HyperText Markup Language </strong><br>
-General info:<br></p>
+</p>
 <ul id = "html_list">
-    <li><span class = "html_info" id = "html_!DOCTYPE">every page starts with !DOCTYPE html
-        
-    </span></li>
+    <li><span class = "html_info" id = "html_!DOCTYPE">Every page starts with<span id = "bold"> &lt;!DOCTYPE html></span> declaration.  </span></li>
     
     <li><span class = "html_info" id= "html_<html>">
-Then there’s a html tag, and at the end of the code there will be a close tag &lt;html> all our code will be written inside those 2 tags.</span>
+Then there’s a <span id = "bold">html tag</span>, and at the end of the code there will be a close tag &lt;html> all our code will be written inside those 2 tags.</span>
 </li>
 
-    <li ><span class = "html_info" id="html_<head>">in the &lt;head> tag there is information that helps the browser render the page but doesn’t contain any information the user see’s.</span></li>
-    <li><span class = "html_info" id="html_<title>">&lt;title>  tag is just the big title of the page.</span></li>
+    <li ><span class = "html_info" id="html_<head>">in the<span id = "bold"> &lt;head></span> tag there is information that helps the browser render the page but doesn’t contain any information the user see’s.</span></li>
+    <li><span class = "html_info" id="html_<title>"><span id = "bold">&lt;title> </span> tag is just the big title of the page.</span></li>
     
-    <li><span class = "html_info" id="html_<meta>"> The &lt;meta> tag defines metadata about an HTML document. Metadata is data (information) about data. &lt;meta> tags always go inside the &lt;head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.(doesn’t have a close tag) </span></li>
+    <li><span class = "html_info" id="html_<meta>"> The <span id = "bold">&lt;meta> </span>tag defines metadata about an HTML document. Metadata is data (information) about data. &lt;meta> tags always go inside the &lt;head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings(doesn’t have a close tag). </span></li>
     
     <li><span class = "html_info" id="html_<h>">
-    &lt;h1>&lt;h2>&lt;h3>...&lt;6> just headers sorted by size(need closing tag). </span></li>
-    <li><span class = "html_info" id="html_<p>">&lt;p> for peregraph, used to add text (need closing tag). </span></li>
-    <li><span class = "html_info" id="html_<br>">&lt;br> tag stands for break, use it if u want the text to go down a line.(no end tag) </span></li>
-    <li><span class = "html_info" id="html_<em>">&lt;em> to mark words( need closing tag ,stands for emphasis)</span></li>
-    <li><span class = "html_info" id="html_<strong>">&lt;strong> make the text bold.(need closing tag) 
+    &lt;h1>&lt;h2>&lt;<span id = "bold">h3>...&lt;6></span> just headers sorted by size(need closing tag). </span></li>
+    <li><span class = "html_info" id="html_<p>"><span id = "bold">&lt;p></span> for peregraph, used to add text (need closing tag). </span></li>
+    <li><span class = "html_info" id="html_<br>"><span id = "bold">&lt;br> </span>tag stands for break, use it if you want the text to go down a line(no end tag). </span></li>
+    <li><span class = "html_info" id="html_<em>"><span id = "bold">&lt;em></span> to mark words( need closing tag ,stands for emphasis).</span></li>
+    <li><span class = "html_info" id="html_<strong>"><span id = "bold">&lt;strong></span> make the text bold(need closing tag). 
 </span></li>
 
-        <li><span class = "html_info" id="html_<ul>">&lt;ul> Unorderd List, used to declare a list of items.(need closing tag)</span></li>
-    <li><span class = "html_info" id="html_<li>">&lt;li> list item- to add an item to the list (need closing tag)</span></li>
-    <li><span class = "html_info" id="html_<ol>">&lt;ol> ordered list- still uses &lt;li> but the program numbers the list for you</span></li>
-    <li><span class = "html_info" id="html_<img>">&lt;img>  image- to present an image on our page, but we need to write the source of the page from an other url on the web(the picture is forced to have a url) and for that we add an attribute called source. </span></li>
-<li><span class = "html_info" id="html_<a>">&lt;a> means anchor. Put between tags the text/and or picture u want to show on the page(not the actual url, just the text or picture or both u want to be shown and by clicking it u will be redirected (need closing tag){optional attributes: <a></a>} </span></li>
-        <li><span class = "html_info" id="html_attributes">HTML attributes are a modifier of an HTML element type. An attribute either modifies the default functionality of an element type or provides functionality to certain element types unable to function correctly without them. In HTML syntax, an attribute is added to an HTML start tag. </span></li>
-        <li><span class = "html_info" id="html_attribute_src">attribute: src(source)- in order to present an image u have to tell the program from where to take the picture, thus you use src to tell the program from where u want to take the picture.(i.e &lt;img src = “someurl”>)</span></li>
-    <li><span class = "html_info" id="html_attribute_alt">attribute: alt- after src u can write alt to describe the picture(i.e &lt;img src = “someurl” alt= “something”>) </span></li>
-<li><span class = "html_info" id="html_attribute_width/height">attribute: width/height- include them in your image to specify size(recommended:use only one of them)(syntax same as src and alt i.e &lt;img src = “someurl” alt= “something” width = “12”) </span></li>
-<li><span class = "html_info" id="html_attribute_id">attribute: id – add inside the tag to give an elemnt a specific identety. (id must be unike) with that id u can choose a specific elements by stating the id, can be accessed thru css via #some_id{}(valid to most elements) (examples: 
-&lt;p id = “some_id”>, &lt;ol id=”some_other_id” >ect…) </span></li>
-<li><span class = "html_info" id="html_attribute_href">attribute: href(hyper reference) - write inside an &lt;a> tag to specifay the url u want to link to (&lt;a href = “http://someurl")  or if u want to jump to a specific part of the page u can just write inside the href #some_id inside "" and  it will go to that id (if you are inside a page that consist of that id)(&lt;a href = “#some_id”>).</span></li>
-<li><span class = "html_info" id="html_relative_url">relative url – write in the &lt;href = “/category/basketball/nba” when you are already in the domain so u don’t need to specifay it or the http, just like in the file explorer. </span></li>
-<li><span class = "html_info" id="html_class">class – adds an element to a certain group, just add after the element inside the starting tag (example &lt;p class=”some_peregraph_class”)(no whitespace allowed!)accessed to css with .some_peregraph_class{} </span></li>
+        <li><span class = "html_info" id="html_<ul>"><span id = "bold">&lt;ul></span> Unorderd List, used to declare a list of items(need closing tag).</span></li>
+    <li><span class = "html_info" id="html_<li>"><span id = "bold">&lt;li></span> list item- to add an item to the list (need closing tag).</span></li>
+    <li><span class = "html_info" id="html_<ol>"><span id = "bold">&lt;ol></span> ordered list- still uses &lt;li> but the program numbers the list for you.</span></li>
+    <li><span class = "html_info" id="html_<img>"><span id = "bold">&lt;img></span>  image- to present an image on our page, but we need to write the source of the page from an other url on the web(the picture is forced to have a url) and for that we add an attribute called source. </span></li>
+<li><span class = "html_info" id="html_<a>"><span id = "bold">&lt;a></span> means anchor. Put between tags the text/and or picture you want to show on the page(not the actual url, just the text or picture or both you want to be shown and by clicking it you will be redirected (need closing tag). </span></li>
+        <li><span class = "html_info" id="html_attributes"><span id = "bold">HTML attributes</span> are a modifier of an HTML element type. An attribute either modifies the default functionality of an element type or provides functionality to certain element types unable to function correctly without them. In HTML syntax, an attribute is added to an HTML start tag. </span></li>
+        <li><span class = "html_info" id="html_attribute_src">attribute: <span id = "bold">src</span>(source)- in order to present an image you have to tell the program from where to take the picture, thus you use src to tell the program from where you want to take the picture(i.e &lt;img src = “someurl”>).</span></li>
+    <li><span class = "html_info" id="html_attribute_alt">attribute: <span id = "bold">alt</span>- after src you can write alt to describe the picture(i.e &lt;img src = “someurl” alt= “something”>). </span></li>
+<li><span class = "html_info" id="html_attribute_width/height">attribute: <span id = "bold">width/height</span> - include them in your image to specify size(recommended:use only one of them)(syntax same as src and alt i.e &lt;img src = “someurl” alt= “something” width = “12”). </span></li>
+<li><span class = "html_info" id="html_attribute_id">attribute:<span id = "bold"> id</span> – add inside the tag to give an elemnt a specific identety. (id must be unike) with that id you can choose a specific elements by stating the id, can be accessed thru css via #some_id{}(valid to most elements) (examples: 
+&lt;p id = “some_id”>, &lt;ol id=”some_other_id” >ect…). </span></li>
+<li><span class = "html_info" id="html_attribute_href">attribute: <span id = "bold">href</span>(hyper reference) - write inside an &lt;a> tag to specifay the url you want to link to (&lt;a href = “http://someurl")  or if you want to jump to a specific part of the page you can just write inside the href #some_id inside "" and  it will go to that id (if you are inside a page that consist of that id)(&lt;a href = “#some_id”>).</span></li>
+<li><span class = "html_info" id="html_relative_url"><span id = "bold">relative url</span> – write in the &lt;href = “/category/basketball/nba” when you are already in the domain so you don’t need to specifay it or the http, just like in the file explorer. </span></li>
+<li><span class = "html_info" id="html_class"><span id = "bold">class</span> – adds an element to a certain group, just add after the element inside the starting tag (example &lt;p class=”some_peregraph_class”)(no whitespace allowed!)accessed to css with .some_peregraph_class{} </span></li>
 
-<li><span class = "html_info" id="html_attribute__blank">attribute  -  _blank goes inside &lt;a>  specify if u want the link to open in a new window.</span></li> 
+<li><span class = "html_info" id="html_attribute__blank">attribute  -  <span id = "bold">_blank</span> goes inside &lt;a>  specify if you want the link to open in a new window.</span></li> 
 
-<li><span class = "html_info" id="html_<table>">&lt;table>  to start a table of data ( need closing tag)</span></li>
+<li><span class = "html_info" id="html_<table>"><span id = "bold">&lt;table></span>  to start a table of data (need closing tag).</span></li>
 
-<span id = "tab"> <ul><li>&lt;thead> stands for table head, inside &lt;table>here u will write the head of the table (need closing tag)</li>
+<span id = "tab"> <ul><li><span id = "bold">&lt;thead></span> stands for table head, inside &lt;table>here you will write the head of the table (need closing tag).</li>
 
-<li>&lt;tr> - inside &lt;thead>, represent a row, each &lt;tr> adds a row(table row)(need closing tag).</li>
-<li>&lt;th>, each time u add this tag u will get another row head(&lt;h>gender&lt;/th> &lt;th> age &lt;/th> etc…)(need closing tag)</li>
+<li><span id = "bold">&lt;tr></span> - inside &lt;thead>, represent a row, each &lt;tr> adds a row(table row)(need closing tag).</li>
+<li><span id = "bold">&lt;th></span>, each time you add this tag you will get another row head(&lt;h>gender&lt;/th> &lt;th> age &lt;/th> etc…)(need closing tag).</li>
 </ul>
 </span>
-<li><span class = "html_info" id="html_<tbody>">&lt;tbody> inside &lt;table>, the body of the table lay here(need closing tab). </span></li>
-<span class  = "html_info" id = "tab html_<tbody>_<tr>"> <ul><li>&lt;tr> inside &lt;tbody>, represent a row of information in the table(not cell,just row)(need closing tag)each &lt;tr> add a row. </li>
+<li><span class = "html_info" id="html_<tbody>">&lt;tbody> inside <span id = "bold">&lt;table></span>, the body of the table lay here(need closing tab). </span></li>
+<span class  = "html_info" id = "tab html_<tbody>_<tr>"> <ul><li><span id = "bold">&lt;tr></span> inside &lt;tbody>, represent a row of information in the table(not cell,just row)(need closing tag)each &lt;tr> add a row. </li>
 
-<li>&lt;td> represent a cell in the specific row(need to be inside a &lt;tr>(need closing tag) </li>
+<li><span id = "bold">&lt;td></span> represent a cell in the specific row(need to be inside a &lt;tr>(need closing tag). </li>
 </ul></span>
 
-<li><span class = "html_info" id="html_comment">comment - &lt;—some commenting --></span></li>
-<li><span class = "html_info" id="html_<span>">&lt;span> - only useful when combined with css, has no actual symentic to the html language. with span you can choose a part of code and manipulate it with css afterwards(need closing tag)</span></li>
-<li><span class = "html_info" id="html_<div>">&lt;div>  - if we want to select a group of elements than we just put them between <br>give it an id attribute to choose the specific &lt;div>
+<li><span class = "html_info" id="html_comment"><span id = "bold">comment</span> - &lt;—some commenting -->.</span></li>
+<li><span class = "html_info" id="html_<span>"><span id = "bold">&lt;span></span> - only useful when combined with css, has no actual symentic to the html language. with span you can choose a part of code and manipulate it with css afterwards(need closing tag).</span></li>
+<li><span class = "html_info" id="html_<div>"><span id = "bold">&lt;div></span>  - if we want to select a group of elements than we just put them between &lt;div> tags and give it an id attribute to choose the specific &lt;div>
 And like that we can modify the whole group how we want. </span></li>
-<li><span class = "html_info" id="html_<div>vs<span>">when u put things inside &lt;div> it will make them a block, when u pat element inside &lt;span> it will make it inline that means that if u have text which is inline and u put part of it between &lt;div>  it will have new line before and after it. &lt;div> make the element inside it a block. 
+<li><span class = "html_info" id="html_<div>vs<span>">when you put things inside <span id = "bold">&lt;div></span> it will make them a block, when you pat element inside <span id = "bold">&lt;span></span> it will make it inline that means that if you have text which is inline and you put part of it between &lt;div>  it will have new line before and after it. &lt;div> make the element inside it a block. 
 
  </span></li>
 </ul>
@@ -145,14 +162,94 @@ And like that we can modify the whole group how we want. </span></li>
         
         
         <h2 id = "id_2">css</h2>
-        <h4>Posted on 29/6/2020</h4>
         
-        <p id = "both"><Strong>Css - Cascading Style Sheets</strong> <br>
-style- when the program sees this tag it nows that this in css and not html thus it switch to a css parser that know how to interpret this language.(need closing tag)
-.</p>
+        
+        <p><Strong>Css - Cascading Style Sheets</strong> </p>
+        <ul id = "css_list">
+        <li><span class = "css_info" id = "css_style"><span id = "bold">style</span>- when the program sees this tag it nows that this in css and not html thus it switch to a css parser that know how to interpret this language.(need closing tag)
+.</span></li>
+        <li><span class = "css_info" id = "css_text_objet"><span id = "bold">text objects</span>(I.e – h1,h2,p) and other objects(check online for list of tags that cooperate with &lt;style>) can be modified inside style, to choose object you just write it between the 2 style tags and open curly braces in which you can specify some modifications(i.e -color:red) to all the instances of the specified object and it will change them.</span></li>
+        <li><span class = "css_info" id = "css_color"><span id = "bold">color</span>you can just write color:green or you can use an rgb picker if you write color:rgb( 1,1  ,1 ). </span></li>
+        <li><span class = "css_info" id = "css_background-color"><span id = "bold">background-color </span> - same as color but for the backround.</span></li>
+        <li><span class = "css_info" id = "css_element_selector">The <span id = "bold">element selector </span> selects HTML elements based on their tag names. Each HTML element—&lt;h1>, &lt;p>, &lt;li>, &lt;body>—and any other HTML element can be selected with CSS by using the tag name without the angle brackets (&lt; and >).</span></li>
+        <li><span class = "css_info" id = "css_class_specification">if you want to choose a <span id = "bold">specific class within a specific tag</span> you can specify first the tag you want to choose and then add a dot and the name of the class, that will only choose elements that are from the selected tag and which have the specific class in them. sometag.someclass{somerules} Another exapmle.   image.cat_images{padding: 20px} that way you can have a class that includes couple of tags and still you can access each separate tag kind that included in the class.</span></li>
+        <li><span class = "css_info" id = "css_descendent">if you want to choose a class that a <span id = "bold">descendent</span>d of an element, lets say you want to choose the class class-a that inside the tag &lt;img> which is inside the tag &lt;p>. you can type p img.class-a or  lets say that theres a &lt;strong> inside &lt;li> inside &lt;ul> and you want to appaly to all the &lt;strong> and there isnt an id or class, you can go down the “family tree” likewaise: ul li strong{} and that will effect all the matching tags. Or even if theres the last example but the ul has a class &lt;ul class=”classy_class”> you can access it likewaise: ul.classy_class li strong{} here we say to the program to check for unordered list that has a class attribute of “table” and inside this ul choose only list items and inside list item only choose the ones that are inside tag &lt;strong>.</span></li>
+        <li><span class = "css_info" id = "css_more_selectors_rule">if you want to <span id = "bold">choose 2 or more selectors</span> like h1 and h2 you can just put a comma between likewaise : h1, h2{color:red}</span></li>
+        <li><span class = "css_info" id = "css_action_commands">there are commands that aren't really a written part of the html or cannot be experessed thru html. when you hover over an element and you want to change its background color you can specify element:hover{background-color:red}  you have <span id = "bold">element:active{somecommand}</span> for when you activate(click) a link so it will do as it says in the curlybraces in the second before you transfer and   element:focus{} for when you tab around a webpage. Also you can select couple of pseodo commands seperated by comma likewaise:
+a:hover, a:active, a:focus { background-color: rgb(255, 0, 255);}  
+</span></li>
+        <li><span class = "css_info" id = "css_id">refer to <span id = "bold">id</span> using #someid</span></li>
+        <li><span class = "css_info" id = "css_font-family"><span id = "bold">font-family</span> used inside {} to determine font. {font-family:serif;}(also you can specify inside”ariel” a specific font. you can add , after the font to have a backup font incase the client computer does not have the first font {font-family:serif,”ariel”;</span></li>
+        <li><span class = "css_info" id = "css_font-size"><span id = "bold">font-size </span>same as font-family but for the size of fonts, declare size by pixels.{font-size: 12px} or you can use em that means the size of the regular font time what number you put next to it .</span></li>
+        <li><span class = "css_info" id = "css_font-weight"><span id = "bold">font-weight</span>declare the boldness of the font. {font-weight:bold;}.</span></li>
+        <li><span class = "css_info" id = "css_more_text_properties"><span id = "bold">more text properties</span> : line-height: 1.5em;   text-align: center;</span></li>
+        <li><span class = "css_info" id = "css_overflow"><span id = "bold">overflow</span></span>-(needs to be assigned to a &lt;div> tag) if theres a block of color with fixed size and the text inside that box is flowing out of the box size you can write overflow:hidden, the default is overflow:visible. You can also type overflow:auto which will make a scroll bar inside the fixed size box so the text will stay inside the box and you can scroll to read what you need.<br>overflow-y/overflow-x = set the axis to auto or visible or hidden.</li>
+        <li><span class = "css_info" id = "css_width/height"><span id = "bold">width/height</span>-(in regard to an elemnt that is between &lt;div> tags, change the width of the block</span></li>
+        <li><span class = "css_info" id = "css_margin"><span id = "bold">margin</span> = set the margin of an element, you can choose side by writing {margin-right:20px;} or{margin-bottom:30px;}. you can set margin:auto; to tell the computer to have equal pixels from both sides so it doesn’t matter the client screen size.
+to change the margin size you can spesify on a new line width: n(anynumber) px or height:n px;
+</span></li>
+        <li><span class = "css_info" id = "css_border"><span id = "bold">border</span> – need to specify 3 aspects of the border, thickness ,style and color like this:{ border: 1px solid rgb(145, 0,0)}. If you want to set a specific side of the border you can just type {border-top:  1px solid rgb(145, 0,0)}.
+<br>to change the border size you can spesify on a new line width: n(anynumber) px or height:n px;</span></li>
+        <li><span class = "css_info" id = "css_padding"><span id = "bold">padding</span> – almost always when you use border you want to add padding. Padding just “pads” the elements inside the porder, it just means it put some distance between them and the border so it doesn’t look ugly.{padding: 20px}.</span></li>
+        <li><span class = "css_info" id = "css"><span id = "bold"></span>box model here</span></li>
+        <li><span class = "css_info" id = "css_position:relative"><span id = "bold">position:relative</span> says  the computer to position it in the normal way you do but move it in a certain amount. And then on a new line you need to write top/bottom/left/right:*anynumber*px to say by what amount to move it;</span></li>
+        <li><span class = "css_info" id = "css_position:absolute"><span id = "bold">position:absolute</span>  says the computer  to position the element only by the provided data on a new place and ignore its relative position, on a new line you need to declar { top/bottom/left/right:*anynumber*px;}</span></li>
+        <li><span class = "css_info" id = "css_position:fixed"><span id = "bold">position:fixed</span> change the position of the element to the screen you are looking at right now and no bined it to the top of the screen so if you scroll down it will stay fixed in his place and will stay on screen.</span></li>
+        <li><span class = "css_info" id = "css_z-index"><span id = "bold">z-index</span> declare the order in which the images gonna be presented on the screen{z-index:1}
+1 will be lowest in hierarchy.
+</span></li>
+        <li><span class = "css_info" id = "css_float"><span id = "bold">float</span> –  makes an elemnt/s “float” inside text like a newspaper peregraph, need to be declared float:left/right; 
+<br>in a new line you can declare for example width:30%; so it will always take 30% width. Most of the time when we use floats we need to give it a width.
+*</span></li>
+        <li><span class = "css_info" id = "css_clear"><span id = "bold">clear</span>- used to put element in the bottom I think declared like this : clear:both;(other option is clear:left/right.
+</span></li>
+        <li><span class = "css_info" id = "css_span"><span id = "bold">&lt;span></span> - only useful when combined with css, has no actual symentic to the html language.
+We use span to select a group of text.<br>if want to use &lt;span> on specific part of an element just add id or a class likewaise:
+	&lt;h3>Why I &lt;span class="lovey-dovey">Love&lt;/span> Cats&lt;/h3> (need closing tag)
+</span></li>
+        <li><span class = "css_info" id = "css_div"><span id = "bold">&lt;div></span>  - if we want to select a group of elements than we just put them between &lt;div> &lt;div>
+And like that we can modify the whole group how we want.
+	give it an id attribute to choose the specific &lt;div>
+	A div is a generic block element with a new line on either side.
+</span></li>
+        <li><span class = "css_info" id = "css_note"><span id = "bold"></span>Note: when you put things inside &lt;div> it will make them a block, when you pat element inside &lt;span> it will make it inline that means that if you have text which is inline and you put part of it between &lt;div>  it will have new line before and after it. &lt;div> make the element inside it a block.</span></li>
+        <li><span class = "css_info" id = "css_Specifitye"><span id = "bold">Specifitye</span>
+- In a situation where there a couple of rules regarding the same tag, lets say :
+&lt;p id="main-paragraph" class="info-paragraph important">I love potatos&lt;/p>
+And in the style tag you declare a couple of rules which all aplly to the specific tag, say:<br>
+p <br><span id = "half_tab">{
+                font-family: sans-serif;
+                color: orange;
+           }</span><br>
+          
+.info-paragraph<br><span id = "half_tab"> {
+                color: blue;
+            }</span><br>
+            
+  #main-paragraph<br><span id = "half_tab"> {
+                font-weight: bold;
+                color: green;
+            }</span><br>
 
-<p id = "hotwords"><strong style ="font-size:25px;color:rgb(255, 55, 20);"> html:</strong> <a href = "#html_!DOCTYPE">!DOCTYPE</a>
-,<a href = "#html_<html>">  &lt;html></a>,
+Which of these rules will be executed?<br>
+Some rules are considered more specify then others so the program will choose the most specific rule.
+Generlly, an <span id = "bold">id is more specific then class and class is more specific then tag</span> so if there is tag specification and a class spesification both applying the same element, it will choose the rules of the class. In the above example it will choose the id because it is more specific then class which is more specific then tag/element.
+In a case that both selectors are equaly specific, the last one wins.
+</span></li>
+        <li><span class = "css_info" id = "css_inline_CSS_styles"><span id = "bold">inline CSS styles</span>
+You can apply css rules inside the body in the tags likewaise:
+&lt;h1 style="background: salmon; color: white;">Salmon Mania&lt;/h1>  dont forget the semi-colon inside the braces.
+Commonly Used when you want to see quickly what it will look like. Recommend to transfer to inside the style tag outside the body afterwards.
+</span></li>
+        <li><span class = "css_info" id = "css_external_stylesheets"><span id = "bold">Using external stylesheets</span>
+ A stylesheet is a sheet of rules of that lives inside a &lt;style>. If you have couple of rules that you want to be applied to more than one html page, instead of copying and pasting again and again(and also when want to change you need to change manualy each one) you can use an external stylesheet.
+You need to use the tag &lt;link rel="stylesheet" type="text/css" href =”someurl”>
+</span></li>
+        </ul>
+
+
+<p id = "hotwords"><strong style ="font-size:25px;color:rgb(0, 0, 0);"> html:</strong> <a href = "#html_!DOCTYPE">!DOCTYPE</a>
+,<a href = "#html_<html>">  &lt;html></a>
 ,<a href = "#html_<head>"> &lt;head></a>
 ,<a href = "#html_<title>"> &lt;title></a>
 ,<a href = "#html_<meta>"> &lt;meta></a>
@@ -182,6 +279,40 @@ style- when the program sees this tag it nows that this in css and not html thus
 ,<a href = "#html_<span>">&lt;span></a>
 ,<a href = "#html_<div>">&lt;div></a>
 ,<a href = "#html_<div>vs<span>">div vs span</a>
+<br><strong style ="font-size:30px;color:rgb(10, 9, 9);line-height:1.5em;"> css:</strong>
+<a href = "#css_style">&lt;style></a>,
+<a href = "#css_text_objet">text-objects</a>,
+<a href = "#css_color">color</a>,
+<a href = "#css_background-color">background-color</a>,
+<a href = "#css_element_selector">element_select</a>,
+<a href = "#css_class_specification">class_specification</a>,
+<a href = "#css_descendent">descendent</a>,
+<a href = "#css_action_commands">action_commands</a>,
+<a href = "#css_id">id</a>,
+<a href = "#css_font-family">font-family</a>,
+<a href = "#css_font-size">font-size</a>,
+<a href = "#css_font-weight">font-weight</a>,
+<a href = "#css_more_text_properties">more_text_properties</a>,
+<a href = "#css_overflow">overflow</a>,
+<a href = "#css_width/height">width/height</a>,
+<a href = "#css_margin">margin</a>,
+<a href = "#css_border">border</a>,
+<a href = "#css_padding">padding</a>,
+<a href = "#css_position:relative">position:relative</a>,
+<a href = "#css_position:absolute">position:absolute</a>,
+<a href = "#css_position:fixed">position:fixed</a>,
+<a href = "#css_z-index">z-index</a>,
+<a href = "#css_float">float</a>,
+<a href = "#css_clear">clear</a>,
+<a href = "#css_span">&lt;span></a>,
+<a href = "#css_div">&lt;div></a>,
+<a href = "#css_note">note</a>,
+<a href = "#css_inline_CSS_styles">inline_CSS_style</a>,
+<a href = "#css_external_stylesheets">external_stylesheet</a>
+
+
+
+
 </p>
     </body>
 </html>
